@@ -57,13 +57,7 @@
                 <value>
                     <elementReference>contact.LastName</elementReference>
                 </value>
-            </inputParameters>   
-            <inputParameters>
-                <name>email</name>
-                <value>
-                    <elementReference>contact.Email</elementReference>
-                </value>
-            </inputParameters>            
+            </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>
@@ -74,9 +68,22 @@
                 <assignToReference>contact.FirstName</assignToReference>
                 <name>firstName</name>
             </outputParameters>
+        </fields>
+        <fields>
+            <name>email</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>contact.Email</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>contact.Email</assignToReference>
-                <name>email</name>
+                <name>value</name>
             </outputParameters>
         </fields>
         <fields>
@@ -97,7 +104,7 @@
             <targetReference>ContactoInfo</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>contact</name>
         <dataType>SObject</dataType>
