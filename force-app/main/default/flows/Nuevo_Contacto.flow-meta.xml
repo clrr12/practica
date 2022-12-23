@@ -47,17 +47,17 @@
             <extensionName>flowruntime:name</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
-                <name>firstName</name>
-                <value>
-                    <elementReference>contact.FirstName</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
                 <name>lastName</name>
                 <value>
                     <elementReference>contact.LastName</elementReference>
                 </value>
             </inputParameters>
+            <inputParameters>
+                <name>firstName</name>
+                <value>
+                    <elementReference>contact.FirstName</elementReference>
+                </value>
+            </inputParameters>            
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>

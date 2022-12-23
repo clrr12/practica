@@ -2,8 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Lista</fullName>
     <columns>ACCOUNT.NAME</columns>
-    <columns>ACCOUNT.PHONE1</columns>
-    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.PHONE1</columns>    
     <filterScope>Mine</filterScope>
     <label>Lista</label>
 </ListView>
